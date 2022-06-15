@@ -2,13 +2,27 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #343434;
+}
+
+h1, h2, h3, h4, h5, h6, p, small, a, li {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #fffaf0;
+}
+
+small {
+  color: #616161;
 }
 
 a {
-  color: inherit;
+  color: #ff388c;
   text-decoration: none;
+}
+
+a:hover {
+  color: #2a7ae2;
+  border-color: #2a7ae2;
 }
 
 * {
