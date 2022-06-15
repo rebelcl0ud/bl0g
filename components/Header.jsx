@@ -5,11 +5,10 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.siteInfo}>
-        <Link href="/"><a className={styles.siteTitle}>test</a></Link>
+        <Link href="/"><a className={styles.siteTitle}>COD3nigma</a></Link>
         <nav className={styles.siteNav}>
           <div className={styles.siteNavLinks}>
-            <Link href="/"><a>test1</a></Link>
-            <Link href="/"><a>test2</a></Link>
+            <Link href="/me"><a>me</a></Link>
           </div>
         </nav>
       </div>
