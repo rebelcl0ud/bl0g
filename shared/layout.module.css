@@ -4,3 +4,9 @@
     margin: 0 7rem;
     color: #cdcdcd;
 }
+
+@media only screen and (max-width: 650px) {
+    .container {
+        margin: 0;
+    }
+}
