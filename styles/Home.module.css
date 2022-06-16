@@ -205,10 +205,5 @@
         margin: 1rem 0;
         font-size: small;
     }
-
-    .card code {
-        white-space: pre-wrap;
-        font-size: 10px;
-    }
 }
 

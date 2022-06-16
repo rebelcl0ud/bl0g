@@ -14,5 +14,12 @@
 @media only screen and (max-width: 650px) {
     .container {
         margin: 0;
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .container {
+        font-size: x-small;
     }
 }
