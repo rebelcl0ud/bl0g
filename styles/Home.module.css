@@ -6,7 +6,7 @@
 }
 
 .main {
-    margin: 0 7rem;
+    margin: 0 15rem;
     flex: 1 0 auto;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .siteInfo {
-    margin: 0 7rem;
+    margin: 0 15rem;
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
@@ -64,7 +64,7 @@
 }
 
 .footerInfo {
-    margin: 0 7rem;
+    margin: 0 15rem;
 }
 
 .footerTitle {
