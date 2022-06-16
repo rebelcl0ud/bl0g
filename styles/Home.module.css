@@ -174,3 +174,27 @@
     margin-left: 0.5rem;
 }
 
+@media only screen and (max-width: 650px) {
+    .main {
+        margin: 0 1rem;
+    }
+
+    .siteInfo {
+        margin: 0;
+    }
+
+    .footerInfo {
+        margin: 0 1rem;
+    }
+
+    .card {
+        margin: 1rem 0;
+        font-size: small;
+    }
+
+    .card code {
+        white-space: pre-wrap;
+        font-size: 10px;
+    }
+}
+
