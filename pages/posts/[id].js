@@ -15,9 +15,7 @@ export default function Post({postData}) {
             <br />
             <div dangerouslySetInnerHTML={{__html: contentHTML}}/>
             <br />
-            <Link href="/">
-                <a>&larr; go back</a>
-            </Link>
+            <Link href="/">&larr; go back</Link>
         </Layout>
        
     )

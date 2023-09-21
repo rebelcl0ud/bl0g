@@ -10,11 +10,9 @@ const Footer = () => {
                     <div>
                         <ul className={styles.contactList}>
                             <Link href='/me'>
-                                <a>
-                                    <li className={styles.contactListItem}>
-                                        me
-                                    </li>
-                                </a>
+                                <li className={styles.contactListItem}>
+                                    me
+                                </li>     
                             </Link>
                         </ul>
                     </div>

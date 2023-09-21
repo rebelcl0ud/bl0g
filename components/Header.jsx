@@ -5,10 +5,10 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.siteInfo}>
-        <Link href="/"><a className={styles.siteTitle}>COD3nigma</a></Link>
+        <Link href="/" className={styles.siteTitle}>COD3nigma</Link>
         <nav className={styles.siteNav}>
           <div className={styles.siteNavLinks}>
-            <Link href="/me"><a>me</a></Link>
+            <Link href="/me">me</Link>
           </div>
         </nav>
       </div>

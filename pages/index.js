@@ -20,9 +20,7 @@ export default function Home({ allPosts }) {
             <div className={styles.card} key={id}>
               <small>{date}</small>
               <h2>
-                <Link href={`/posts/${id}`}>
-                  <a>{title}</a>
-                </Link>
+                <Link href={`/posts/${id}`}>{title}</Link>
               </h2>
               {snippet}
             </div>
