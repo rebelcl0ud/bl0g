@@ -16,6 +16,8 @@ Some of the ones I tend to remember:
 * touch => creates file, ie: touch file123.txt
 * ctrl + c => exits
 * clear or cmd + k => clears terminal
+* tail => output last part of file
+* head => output first part of file
 
 Then there's some I, maybe, saw at some point and forgot or just plain didn't know:
 * echo => repeats input
@@ -28,6 +30,7 @@ Then there's some I, maybe, saw at some point and forgot or just plain didn't kn
 * chown => changes owner
 * / some-char-here, ie: /-l => finds keyword within vim file
 * chmod => change mode (changes to permissions)
+* sudo!! => shortcut, will run last command as sudo
 
 ## vim stuffsss
 Something I remember giving me anxiety when I first encountered it was vim... and by this I mean when I was staring at what clearly was a file but in the terminal and I needed to either edit or like leave and didn't know how (obvi the internet or kind soul came to the rescue)
