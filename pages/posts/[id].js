@@ -24,8 +24,7 @@ export default function Post({postData}) {
 export async function getStaticPaths() {
     // https://nextjs.org/docs/basic-features/data-fetching#the-paths-key-required
     const paths = getPostsID()
-
-    console.log({paths})
+    
     return {
         paths,
         fallback: false
