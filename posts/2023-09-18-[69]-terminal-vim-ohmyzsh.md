@@ -3,10 +3,11 @@ title: "terminal, vim, ohmyzsh"
 date: "2023-09-18"
 ---
 
-## terminal stuffsss
 I always find it so fascinating when I see people really go at it with their terminal, remembering all these commands and such...
 
 I've come to remember a few over time (due to repeated use), but nothing close to what I've seen from others.
+
+## terminal stuffsss
 
 Some of the ones I tend to remember:
 * ls => lists what's in the directory
