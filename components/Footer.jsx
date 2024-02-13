@@ -7,20 +7,16 @@ const Footer = () => {
             <div className={styles.footerInfo}>
                 <h2 className={styles.footerTitle}>COD3nigma</h2>
                 <div className={styles.footerNav}>
-                    <div>
-                        <ul className={styles.contactList}>
-                            <Link href='/me'>
-                                <li className={styles.contactListItem}>
-                                    me
-                                </li>     
-                            </Link>
-                        </ul>
-                    </div>
                     <div className={styles.footerNav2}>
                         <p>
                             A migration of scribbles regarding code-- a
                             &apos;note to self&apos; collection.
                         </p>
+                        <ul className={styles.contactList}>
+                            <Link href='/me' passHref>
+                                <li className={styles.contactListItem}>/me</li>
+                            </Link>
+                        </ul>
                     </div>
                 </div>
             </div>
