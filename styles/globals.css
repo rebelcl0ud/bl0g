@@ -5,7 +5,16 @@ body {
     background-color: #343434;
 }
 
-h1, h2, h3, h4, h5, h6, p, small, a, li {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+small,
+a,
+li {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-weight: 400;
     color: #fffaf0;
@@ -29,12 +38,14 @@ a:hover {
     box-sizing: border-box;
 }
 
-pre, code {
+pre,
+code {
     white-space: pre-wrap;
 }
 
 @media only screen and (max-width: 650px) {
-    pre, code {
+    pre,
+    code {
         font-size: smaller;
     }
 }
