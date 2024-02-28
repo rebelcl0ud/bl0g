@@ -10,6 +10,9 @@ Turns out, yes that is exactly first stop... fork it.
 - fork it
 - clone it (your fork) -- if you've ever worked with a team this step should be familiar territory as the steps that follow.
 - create a folder on your machine on where it will go and run the `git clone` cmd
+    - you may see that your fork is behind some commits, if so, `git pull` from original repo.
+        - example: `git pull <https://github.com/somebody/whatever-project-name.git main`
+        - you can then update your fork with `git push`
 - create a branch, give it some form of description
 - make your changes; add, commit, push
 - create a PR (pull request)
