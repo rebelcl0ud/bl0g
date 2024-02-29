@@ -21,13 +21,36 @@ Turns out, yes that is exactly first stop... fork it.
         - this creates the branch (`-b` is shorthand for branch) and puts you on it due to `checkout`
 
 - make your changes; add, commit, push
-
+    - `git push` may not be enough, you may get a message sinilar to `git push --set-upstream origin your-branch-name`
+        - _what does this mean?_ It means you will establish a connection between local branch and branch on the remote repository (in this case, the forked repository on GitHub)
 
 - create a PR (pull request)
+    - 👀 there should be a green button for you to press
 
 - describe what your PR is about (what changes it entails)
+  - let people know purpose, changes made, etc. It is possible there may be a template to follow on the project/repo, if not, try to be as descriptive as possible.
+    
+    Below is what I submitted recently. Honestly, I was having trouble deciding what/how much to include. The last time I did one of these I was on a project where there was a template to include information wanted/expected.
 
+    
+    PR Title:
+    
+    `addresses minor issues in the lessons/documentation`
+    
+    PR Body:
+    ```
+    Purpose:
+    PR addresses minor issues in the lessons/documentation: typos, grammar, and occasional syntax or version issue. The goal is to improve overall clarity and readability of course lessons.
+
+    Changes Made:
+    - Corrected typos/spelling.
+    - Fixed grammatical errors to improve readability/clarity.
+    - Adjusted syntax (redux-lesson 14) on one example, due to reassignment, eg: const >> let.
+    - Added note to module installation (c8-testing-lesson 15) about possibly encountering an error where (for the sake of following along the lesson) the original version used would likely be necessary.
+    ```
+   
 - once done, submit away
+    - it's ok, don't be scared :D
 
 Now you wait on feedback...
 
