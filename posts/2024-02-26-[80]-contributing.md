@@ -55,8 +55,6 @@ Turns out, yes that is exactly first stop... fork it.
 Now you wait on feedback...
 
 - keep an eye out for any questions/concerns/etc about your changes and be prepared to appease/explain/etc
-- changes approved? your PR will be merged in.
+- changes approved? your PR will be merged in. Take a moment, do a happy dance or whatever your vibe is and repeat the process either on the same project or another one you may have found in the wild.
 
-Take a moment, do a happy dance or whatever your vibe is and repeat the process either on the same project or another one you may have found in the wild.
-
-Note: I may be back to flesh out any of the steps once I reunite with my notes :D
+Something I came across _after?_... _during?_... _while?_ (I don't remember now :D) submitting my PR - this [how to contribute](https://opensource.guide/how-to-contribute/) guide!
