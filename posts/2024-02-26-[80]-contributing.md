@@ -5,7 +5,7 @@ date: "2024-02-26"
 
 One of my first contributions to a project (that wasn't some team of people I had met prior) was FCC (FreeCodeCamp) with a couple of random ones for my first Hacktober. I've been wanting to contribute again and after doing a React refresher I figured why not contribute to that. So, I made some notes as I went along at what I could 'fix' and today when I sat down to get started I realized I had left my notes behind (lol), but more importantly I wasn't sure how I did it last time... _did I fork it? What did I do first?_
 
-Turns out, yes that is exactly first stop... fork it.
+Turns out, yes, that is exactly first stop... fork it.
 
 - fork it
 
@@ -21,11 +21,11 @@ Turns out, yes that is exactly first stop... fork it.
         - this creates the branch (`-b` is shorthand for branch) and puts you on it due to `checkout`
 
 - make your changes; add, commit, push
-    - `git push` may not be enough, you may get a message sinilar to `git push --set-upstream origin your-branch-name`
+    - `git push` may not be enough, you may get a message similar to `git push --set-upstream origin your-branch-name`
         - _what does this mean?_ It means you will establish a connection between local branch and branch on the remote repository (in this case, the forked repository on GitHub)
 
 - create a PR (pull request)
-    - 👀 there should be a green button for you to press
+    - 👀 there should be a green button for you to press _somewhere_
 
 - describe what your PR is about (what changes it entails)
   - let people know purpose, changes made, etc. It is possible there may be a template to follow on the project/repo, if not, try to be as descriptive as possible.
@@ -55,6 +55,7 @@ Turns out, yes that is exactly first stop... fork it.
 Now you wait on feedback...
 
 - keep an eye out for any questions/concerns/etc about your changes and be prepared to appease/explain/etc
+
 - changes approved? your PR will be merged in. Take a moment, do a happy dance or whatever your vibe is and repeat the process either on the same project or another one you may have found in the wild.
 
 Something I came across _after?_... _during?_... _while?_ (I don't remember now :D) submitting my PR - this [how to contribute](https://opensource.guide/how-to-contribute/) guide!
