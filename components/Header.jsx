@@ -11,6 +11,7 @@ const Header = () => {
                 <nav className={styles.siteNav}>
                     <div className={styles.siteNavLinks}>
                         <Link href='/me'>/me</Link>
+                        <a href='https://www.rebelcl0ud.xyz/'>site</a>
                     </div>
                 </nav>
             </div>

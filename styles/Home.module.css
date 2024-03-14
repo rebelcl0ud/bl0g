@@ -82,11 +82,13 @@
     list-style: none;
     padding: 0;
     width: max-content;
+    display: flex;
 }
 
 .contactListItem {
     color: #ff388c;
     text-decoration: none;
+    padding-right: 20px;
 }
 
 .footerNav2 > p {

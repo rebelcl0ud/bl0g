@@ -16,6 +16,7 @@ const Footer = () => {
                             <Link href='/me' passHref>
                                 <li className={styles.contactListItem}>/me</li>
                             </Link>
+                            <a href='https://www.rebelcl0ud.xyz/'><li className={styles.contactListItem}>site</li></a>
                         </ul>
                     </div>
                 </div>
