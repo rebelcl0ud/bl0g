@@ -59,6 +59,18 @@ OKAY! So, we got the dummy data in there and now _I want it_ so I can list that 
 
 _runs local_ annnnd... we got some dummy data loaded on the screen, success.
 
+## inserting a book - forms, Zod, revalidatePath(), useRef()
+Some things to now look into:
+At the moment, it is a typical form that takes a book title, author and some notes. There isn't much styling as my main focus is functionality. I started by making a file for my action, `createBook`. This function will extract the data (`formData`) into an object where I'll use `.get()` method and test it out. I'm sure uneccessary to alot of folks, but I tend to `console.log` each bit as I go.
+
+Next, validating the data and preparing it before you send it off to the database. I want to make sure I have it in the correct format and correct types. To handle this, it is possible to do it manually, but I came across a library to simplify the task, Zod.
+
+One thing, I forgot to mention was due to the nature of the actions file `use server` was added to the top. _What is that?_ In NextJS by adding this I'm marking all exported functions within the file as server functions which can then be imported into client or server components. Note: it is possible to also write server actions inside a server copmponent by adding `use server` inside the action.
+
+Next, inserting the data into the database. Here, I used the postgres sdk and the `revalidatePath` from `next/cache`. What does that do? it purges cached data on demand for a specified path. In other words, once the database has been updated with info submitted, the `/books` path will be revalidated and fresh data will be fetched.
+
+Next, the form input values don't clear after being submitted. To clear this we can use a hook, `useRef`. We can access the form element using this hook which will return the form object that contains the `reset()` method. Hooks can only be used in client components, putting `use client`at the top of the Form componet file will mark it as one.
+
 ## next steps, to be continued...
 This will continue to get filled as I work through the project.
 
@@ -74,3 +86,7 @@ References:
 - [hipsum](https://hipsum.co/)
 - [dotenv](https://www.npmjs.com/package/dotenv)
 - [preventing sql injections](https://vercel.com/docs/storage/vercel-postgres/sdk#preventing-sql-injections)
+- [FormData](https://developer.mozilla.org/en-US/docs/Web/API/FormData)
+- [Zod](https://zod.dev/)
+- [revalidatePath](https://nextjs.org/docs/app/api-reference/functions/revalidatePath)
+- [useRef](https://react.dev/reference/react/useRef)
