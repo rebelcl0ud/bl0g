@@ -71,13 +71,17 @@ Next, inserting the data into the database. Here, I used the postgres sdk and th
 
 Next, the form input values don't clear after being submitted. To clear this we can use a hook, `useRef`. We can access the form element using this hook which will return the form object that contains the `reset()` method. Hooks can only be used in client components, putting `use client`at the top of the Form componet file will mark it as one.
 
+## editing a book
+Upto this point there was no way to edit a book contribution so I started with adding a 'button' to do just that. On clicking, it would route the user to a page that would show a form populated with the information from the specific book user chose to edit. On that page, I grabbed the `id` from `Page params` to use with a `fetchBookByID` that would query for the specific book in the database. That information would then feed into the `EditForm` component prop that would give me the populated form I mentioned.
+
+Issue encountered:
+One issue I ran into, the action I had created for this form. I could not use it as-is like I did with the `createBook` action. Instead, I had to `.bind` the `updateBook` action giving it an initial value of null, and add the `id` as the 2nd argument. I went looking for what this actually does, essentially prepends `id` to the original arguments. Another bit I came across was that it ensures any values passed to the Server Action are encoded.
+
+Second issue, I found as I was testing the editing was that the populated form was not populating with the most recent book info, after some searching I found I could use NextJS's `unstable_noStore` which happens to be the equivalent of `fetch(...., {cache: 'no-store'})`. After adding that to `fetchBookByID` I was able to see the expected book information within the edit form.
+
+
 ## next steps, to be continued...
 This will continue to get filled as I work through the project.
-
-
-
-
-
 
 References:
 - [nextJS](https://nextjs.org/docs/getting-started/installation)
@@ -90,3 +94,6 @@ References:
 - [Zod](https://zod.dev/)
 - [revalidatePath](https://nextjs.org/docs/app/api-reference/functions/revalidatePath)
 - [useRef](https://react.dev/reference/react/useRef)
+- [.bind()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
+- [passing additional args with .bind()](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations#passing-additional-arguments)
+- [noStore](https://nextjs.org/docs/app/building-your-application/data-fetching/fetching-caching-and-revalidating#individual-fetch-requests)
