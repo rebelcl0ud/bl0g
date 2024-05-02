@@ -79,8 +79,35 @@ One issue I ran into, the action I had created for this form. I could not use it
 
 Second issue, I found as I was testing the editing was that the populated form was not populating with the most recent book info, after some searching I found I could use NextJS's `unstable_noStore` which happens to be the equivalent of `fetch(...., {cache: 'no-store'})`. After adding that to `fetchBookByID` I was able to see the expected book information within the edit form.
 
+## deleting a book + adding tests
+Last time I tried to add tests to a NextJS project I was beyond confused so here's to round 2!
 
-## next steps, to be continued...
+Followed the Next docs and then writing my first test I realized I was getting some syntax errors... 
+suggestion was `npm i --save-dev @types/jest` and then `ts-node`.
+
+```
+Error: Jest: Failed to parse the TypeScript config file /Users/jo/workspace/b00ked/jest.config.ts
+Error: Jest: 'ts-node' is required for the TypeScript configuration files. Make sure it is installed
+```
+
+Finally! Success! Jest was setup.
+
+Fun Fact: `npm fund`, I came across this during my setup and I'm not sure if this is something my past self encountered at some point and just forgot, but apparently this is how package authors let users know how they can finacially support their work. Running this, npm will then display things like links on where one can donate.
+
+### running tests and refactoring
+As I added and ran tests I came across a few fails and reasons why. One of these had to do with a form, which I refactored. 
+
+Originally, I had the action:
+```
+action={async (formData) => {
+  await createBook(formData);
+  ref.current?.reset();
+}}
+```
+The test led me to look at an alternative, which was to do the usual and pass a fn to an `onSubmit`. 
+While troubleshooting I came across an exclamation, eg: `const formData = new FormData(ref.current!);`, the exclamation here is called the `non-null assertion operator`. This tells TS to treat the expression as non-null and ignore potential null or undefined value at that point. This is to be used with caution as it overrides TS's null checks.
+
+## to be continued...
 This will continue to get filled as I work through the project.
 
 References:
@@ -97,3 +124,5 @@ References:
 - [.bind()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
 - [passing additional args with .bind()](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations#passing-additional-arguments)
 - [noStore](https://nextjs.org/docs/app/building-your-application/data-fetching/fetching-caching-and-revalidating#individual-fetch-requests)
+- [jest](https://jestjs.io/docs/api)
+- [testing library](https://testing-library.com/docs/react-testing-library/api)
