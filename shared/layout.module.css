@@ -5,20 +5,33 @@
     color: #cdcdcd;
 }
 
-@media only screen and (max-width: 950px) {
+@media (width > 1440px) {
     .container {
-        margin: 0 7rem;
+        margin: 0 28rem;
     }
 }
 
-@media only screen and (max-width: 650px) {
+@media (1080 < width < 1440px) {
     .container {
-        margin: 0;
+        margin: 0 20rem;
+    }
+}
+
+@media (width < 1080px) {
+    .container {
+        padding: 0;
+        margin: 0 8rem;
+    }
+}
+
+@media (width < 680px) {
+    .container {
+        margin: 0 2rem;
         font-size: small;
     }
 }
 
-@media only screen and (max-width: 340px) {
+@media (width < 340px) {
     .container {
         font-size: x-small;
     }
