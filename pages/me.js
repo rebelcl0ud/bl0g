@@ -13,19 +13,15 @@ const Me = () => {
                     they end up reading like a collection of hieroglyphics.
                 </p>
                 <p>
-                    So, I try to write as I work on a seperate window in <del>Sublime</del> VS Code-
-                    those files, although a bit scattered, are readable. Sorta.
-                </p>
-                <p>
-                    My intention: migrate my many notes into VS Code to turn into blog posts
-                    not only for easier access and better readability, but
-                    perhaps to better solidify what I may have learned in the
-                    process.
+                    My intention: migrate my many notes into VS Code to turn
+                    into blog posts not only for easier access and better
+                    readability, but perhaps to better solidify what I learned
+                    in the process.
                 </p>
                 <p>
                     I write for me, but if someone stumbles upon this and gets
-                    helped and/or entertained /smiles I&apos;d find that pretty
-                    rad.
+                    helped and/or entertained <i>/smiles</i> I&apos;d find that
+                    pretty rad.
                 </p>
                 <p>- jO</p>
             </section>
