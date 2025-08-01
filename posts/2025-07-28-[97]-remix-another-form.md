@@ -25,3 +25,14 @@ It's like researching (insert w.e here) at some point you gotta go try and do th
 
 So, I have another backlog of docs to write (for my weekly LI posts-- trying to get into the habit of doing that) and haven't gone past much more than outline for each "post". Those are about authentication/etc.
 This one would have started another "chunk", but since it's fresh and I'm about to put into practice what I decided on I figured I'd get this little "wip/draft" started.
+
+## Ok, I'm back
+
+Not going to lie, I forgot to come update this right away--
+So, what happened? Well, at first I had, you know, a form lol but when it came to the ingredients/amounts of stuff _dun dun dun_ I realized... it had to be approached differently. So, I thought about it and was like, well, I'd like to see what I'm adding before I submit the form. I mean, sure, maybe there's a recipe out there with just one ingredient lolol but um, yea, no.
+
+## Outcome
+
+I moved out that piece of the form, ingredient/amount part, into its own component and used React state to give me that preview of what I wanted. Each time I added some ingredient/amount I'd get a little preview of what I added with the ability to remove it. There's a hidden input so when the form is submitted ingredient(s)/amount(s) go off with the rest of their little friends _weeeee_ through some checks and stuff until finally `createRecipe`.
+
+There's still some things to add/tweak/etc, but still, yay for progress. I'll be adding tests and circling back to the test I stepped away from because (I think) while working on this I inadvertently shed some light on the issue. Girl, I love when that happens. I fight with myself about taking a breather, but more often than not lol the step back is the beginning to the answer unfolding. I'll be testing out my theory later... (future me) TODO: report back
