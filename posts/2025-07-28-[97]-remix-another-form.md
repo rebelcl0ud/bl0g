@@ -5,7 +5,7 @@ date: "2025-07-28"
 
 # Another form?
 
-Yes, yes. I actually already built register and login forms, the latter actually pissing me off while writing tests 😅 so of course I decided to build another form I've had on the todo list-- hello , addRecipe form.
+Yes, yes. I actually already built register and login forms, the latter 😤 (got that sorted 😅) so of course I decided to build another form I've had on the todo list-- hello , addRecipe form.
 At this point, I really have no idea if I've talked about why I started building this app, but basically there's a household in danger of being swallowed whole by a collection of recipes.
 I thought it would be a good opportunity to use/learn Remix and touch some backend-ish stuff while working on something that would organize that recipe chaos.
 
@@ -36,3 +36,7 @@ So, what happened? Well, at first I had, you know, a form lol but when it came t
 I moved out that piece of the form, ingredient/amount part, into its own component and used React state to give me that preview of what I wanted. Each time I added some ingredient/amount I'd get a little preview of what I added with the ability to remove it. There's a hidden input so when the form is submitted ingredient(s)/amount(s) go off with the rest of their little friends _weeeee_ through some checks and stuff until finally `createRecipe`.
 
 There's still some things to add/tweak/etc, but still, yay for progress. I'll be adding tests and circling back to the test I stepped away from because (I think) while working on this I inadvertently shed some light on the issue. Girl, I love when that happens. I fight with myself about taking a breather, but more often than not lol the step back is the beginning to the answer unfolding. I'll be testing out my theory later... (future me) TODO: report back
+
+## Did I fix that test file I walked away from for a bit?
+
+Didn't circle back to that other test right away, but I finally got some real feedback from that login test file. Initially, I was receiving a Response type output-- turns out breaking out the form portion into its own component was the way to go. I still have to go back and flesh out that test file, but now I'm finally getting legit pass/fail outputs 🙌
